@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainvisComponent } from './mainvis/mainvis.component';
 import { FooterComponent } from './footer/footer.component';
-import { SideComponent } from './side/side.component';
+import { SectionComponent } from './section/section.component';
+import { SectionEachComponent } from './section-each/section-each.component';
+import { SectionPriceEachComponent } from './section-price-each/section-price-each.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SideComponent } from './side/side.component';
     HeaderComponent,
     MainvisComponent,
     FooterComponent,
-    SideComponent
+    SectionComponent,
+    SectionEachComponent,
+    SectionPriceEachComponent
   ],
   imports: [
     BrowserModule,
