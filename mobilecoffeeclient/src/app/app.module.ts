@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SectionComponent } from './section/section.component';
 import { SectionEachComponent } from './section-each/section-each.component';
 import { SectionPriceEachComponent } from './section-price-each/section-price-each.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SectionPriceEachComponent } from './section-price-each/section-price-ea
     FooterComponent,
     SectionComponent,
     SectionEachComponent,
-    SectionPriceEachComponent
+    SectionPriceEachComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
