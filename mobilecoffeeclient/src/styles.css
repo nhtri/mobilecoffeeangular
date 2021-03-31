@@ -70,7 +70,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 body{font-size:14px;line-height:1.4;font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;-webkit-text-size-adjust:none;background:#f6f6f6;color:#333}
 .main_wrap{width:1000px;margin:30px auto 0;overflow:hidden}
 
-.main{width:1024px;display:inline-block;float:left}
+.main{width:1024px;display:inline-block;float:left;background-color: white;}
 .main100{max-width:1000px;width:100%}
 .side{width: 230px;padding:0;margin: 0 0 0 20px;/* background:#fff; */display:block;display:inline-block;float:right;}
 .sec{background:#fff;width:95%;padding:2% 2.5%}
@@ -98,7 +98,7 @@ body a {color: #005fc0;text-decoration: none;cursor: pointer;}
 /* visual
 ----------------------------------------------------------------------------------------------------------------*/
 .main_vis {/* background: #96d4f4; */width:100%;}
-.main_vis img{width:100%;border: 1px solid #d7d7d7;}
+.main_vis img{width:100%;border: 1px solid #d7d7d7; max-height: 280px ;}
 .img_wrap {text-align:center;} .img_wrap img{}
 
 
@@ -261,8 +261,8 @@ footer .bnr_area {width:100%;}
 footer .bnr_area ul li {float:left;padding:1%;width:18%;}
 footer .bnr_area ul li a img {width:100%;}
 footer .bottom {padding:20px 0;max-width: 980px;float:left; width: 980px;border-bottom: 1px solid #cccccc;padding:15px 0;}
-footer .bottom .left {width:65.5%;float:left;}
-footer .bottom .right {width:30%;float:right;}
+footer .bottom .left {width:60%;float:left;}
+footer .bottom .right {width:40%;float:right;}
 footer .bottom .left .row25 {width:23%;float:left;padding:3% 1%}
 footer .bottom .left .row25 ul li a {color: #585858;text-decoration: none;font-size:12px;}
 footer .bottom .left .row25 ul li a:active {color: #7a659a;text-decoration: underline;}
