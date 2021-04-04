@@ -10,6 +10,7 @@ import { SectionComponent } from './section/section.component';
 import { SectionEachComponent } from './section-each/section-each.component';
 import { SectionPriceEachComponent } from './section-price-each/section-price-each.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

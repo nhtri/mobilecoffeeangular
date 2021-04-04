@@ -70,7 +70,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 body{font-size:14px;line-height:1.4;font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;-webkit-text-size-adjust:none;background:#f6f6f6;color:#333}
 .main_wrap{width:1000px;margin:30px auto 0;overflow:hidden}
 
-.main{width:1024px;display:inline-block;float:left;background-color: white;}
+.main{width:1024px;display:inline-block;float:left;background-color: white; margin-bottom: 15px;}
 .main100{max-width:1000px;width:100%}
 .side{width: 230px;padding:0;margin: 0 0 0 20px;/* background:#fff; */display:block;display:inline-block;float:right;}
 .sec{background:#fff;width:95%;padding:2% 2.5%}
