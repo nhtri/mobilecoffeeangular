@@ -76,7 +76,7 @@ body{font-size:14px;line-height:1.4;font-family:"ヒラギノ角ゴ Pro W3","Hir
 .sec{background:#fff;width:95%;padding:2% 2.5%}
 
 .each {margin: 0px 0 30px;padding: 2.5% 2% 3%;position: relative;}
-.each .ttlh2 {font-size:20px;border-bottom: solid 5px #b2e8ff;margin: 0 0 10px;padding: 3px 10px 3px 25px;color: #00a9ef;background: url(https://kaitori-rudeya.com/assets/img/arrow-ico.png)no-repeat left center;background-size: 18px;}
+.each .ttlh2 {font-size:20px;border-bottom: solid 5px #ec7822;margin: 0 0 10px;padding: 3px 10px 3px 25px;color: #e84727;background-size: 18px;}
 .each .ttlh2 span {font-size:12px;float:right;padding: 10px 0 0;color: #fd6ca2;}
 body a {color: #005fc0;text-decoration: none;cursor: pointer;}
 
@@ -299,10 +299,10 @@ footer .bottom .left .row25 ul li.ex_link a {	background:url(https://giftgrace.j
 
 .bottom .right{float:right;margin:0 auto 20px;padding:20px;text-align:center;border:1px solid #ccc;background-color:#fff}
 .bottom .right .ttl{font-size:16px;font-weight:700}
-.bottom .right p.form,.bottom .right p.tel{font-size:15px;text-align:left}
-.bottom .right p.form a{display:block;padding:10px 5px 10px 50px;margin-bottom:10px;text-decoration:none!important;background-color:#fff;border:1px solid #ccc;background:url(https://giftgrace.jp/assets/img/ico_mail.png) no-repeat 15px center;background-size:22px}
-.bottom .right p.form a:active{color:#fff!important;background:#6d578f url(https://giftgrace.jp/assets/img/ico_mail2.png) no-repeat 15px center;background-size:22px}
-.bottom .right p.tel{margin-bottom:10px;padding:0 5px 0 50px;font-size:18px;line-height:1;background:url(https://giftgrace.jp/assets/img/ico_tel.png) no-repeat 15px center;background-size:22px}
+.bottom .right p.form,.bottom .right p.tel{font-size:15px;text-align:left}.bottom .right p.form a{display:block;padding:10px 5px 10px 50px;margin-bottom:10px;text-decoration:none!important;background-color:#fff;border:1px solid #ccc;background-size:22px}
+
+.bottom .right p.form a:active{color:#fff!important;background-size:22px}
+.bottom .right p.tel{color:#d6d6d6;margin-bottom:10px;padding:0 5px 0 20px;font-size:16px;line-height:1;background-size:22px}
 .bottom .right p.tel span,.bottom .right p.attention{font-size:12px;text-align:left;margin:5px 0}
 footer address{text-align:center;margin:5px 0;font-size:12px}
 .side_cate .cate_in ul li a{display:block}
@@ -349,9 +349,9 @@ footer address{text-align:center;margin:5px 0;font-size:12px}
 .tab_content_description .tab_content_ul li{width:100%;float:left;padding:0 0 5px;border-bottom:1px dotted #ccc;margin-bottom:5px}
 .tab_content_description .tab_content_ul li .pics{margin: 0 5px 0 0;width:45px;}
 .tab_content_description .tab_content_ul li .pics img{width: 40px;height: 35px;float:left;display:inline-block;}
-.tab_content_description .tab_content_ul li .name{margin: 0 4px 0 10px;width: 420px;overflow:hidden;height:20px;line-height:21px;}
+.tab_content_description .tab_content_ul li .name{color:#565656;margin: 0 4px 0 10px;width: 420px;overflow:hidden;height:20px;line-height:21px;}
 .tab_content_description .tab_content_ul li .price{font-size:11px;width: 158px;text-align: right;}
-.tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#109cf1;font-size: 17px;margin: 0 3px 0;}
+.tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size: 17px;margin: 0 3px 0;}
 .tab_content_description .tab_content_ul li .price .kakaku{font-size:10px;color:#585858;font-weight:700;margin-right:2px}
 .tab_content_description .tab_content_ul li .NorU{font-size:11px;border-radius:3px;padding:1px 4px}
 .tab_content_description .tab_content_ul li .new{background:#fdf3f7;border:1px solid #fd6ca2;color:#fd549e}
@@ -364,7 +364,7 @@ input[name="tab_item2"]{display:none}
 #cate1:checked ~ #cate1_content,#cate2:checked ~ #cate2_content,
 #cate3:checked ~ #cate3_content,#cate4:checked ~ #cate4_content,#cate5:checked ~ #cate5_content,
 #cate6:checked ~ #cate6_content,#cate7:checked ~ #cate7_content{display:block}
-.tabs input:checked + .tab_item{background-color: #2da9e8;color:#fff;}
+.tabs input:checked + .tab_item{background-color: #ec7822;color:#fff;}
 
 /*kaitori_article*/
 .kaitori_article p{font-size:15px;padding:5px 5px 10px}
@@ -422,10 +422,10 @@ input[name="tab_item2"]{display:none}
         .tab_content_description .tab_content_ul li{width:100%;float:left;padding:0 0 5px;border-bottom:1px dotted #ccc;margin-bottom:5px}
         .tab_content_description .tab_content_ul li .pics{margin:0 10px 0 0;width:45px}
         .tab_content_description .tab_content_ul li .pics img{width:35px;height:35px;float:left;display:inline-block}
-        .tab_content_description .tab_content_ul li .name{margin:0 10px;width:415px;overflow:hidden;height:20px;line-height:21px}
-        .tab_content_description .tab_content_ul li .price{font-size:11px;width:140px;text-align:right}
-        .tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#109cf1;font-size:17px}
-        .tab_content_description .tab_content_ul li .price .kakaku{font-size:10px;color:#585858;font-weight:700;margin-right:2px}
+        .tab_content_description .tab_content_ul li .name{color:#565656;margin:0 10px;width:415px;overflow:hidden;height:20px;line-height:21px}
+        .tab_content_description .tab_content_ul li .price{font-size:11px;width:140px;text-align:left}
+        .tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size:14px; margin-left: 12px;}
+        .tab_content_description .tab_content_ul li .price .kakaku{font-size:10px;color:#585858;font-weight:700;}
         .tab_content_ttl h2{font-size:1.3em;padding:0 0 10px;color:#249bd8}
         .tab_content{display:none;clear:both;overflow:hidden;width:calc(100% - 6px);border-top:none}
         
