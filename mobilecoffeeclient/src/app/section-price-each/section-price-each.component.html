@@ -10,45 +10,38 @@
         <input id="cate2" type="radio" name="tab_item1">
         <label class="tab_item" for="cate2">
             <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">iPhone Cũ</font>
+                <font style="vertical-align: inherit;">iPad</font>
             </font>
         </label>
         <input id="cate3" type="radio" name="tab_item1">
         <label class="tab_item" for="cate3">
             <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">iPad</font>
-            </font>
-        </label>
-        <input id="cate4" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate4">
-            <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Macbook New</font>
             </font>
         </label>
-        <input id="cate5" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate5">
-            <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Macbook Cũ</font>
-            </font>
-        </label>
-        <input id="cate6" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate6">
+        
+        <input id="cate4" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate4">
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Air Pods</font>
             </font>
         </label>
-        <input id="cate7" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate7">
+
+        <input id="cate5" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate5">
             <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Android</font>
+                <font style="vertical-align: inherit;">Apple Watch</font>
             </font>
         </label>
-        <input id="cate8" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate8">
+
+        <input id="cate6" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate6">
             <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Laptop</font>
+                <font style="vertical-align: inherit;">Sim Data</font>
             </font>
         </label>
+        
+      
         <!--カテ始まり-->
         <div class="tab_content" id="cate1_content">
             <div class="tab_content_description">
@@ -60,7 +53,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of iphone_new">
                         <p>
-                            <a routerLink="/detail" (click)="test($event)" [state]="(iphone.id)">
+                            <a routerLink="/detail" [state]="iphone">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -79,6 +72,7 @@
             </div>
         </div>
 
+       
         <div class="tab_content" id="cate2_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
@@ -87,9 +81,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of iphone_old">
+                    <li *ngFor="let iphone of ipad_new">
                         <p>
-                            <a routerLink="/detail">
+                            <a routerLink="/detail" [state]="iphone">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -116,9 +110,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of ipad_new">
+                    <li *ngFor="let iphone of macbook_new">
                         <p>
-                            <a routerLink="/detail">
+                            <a routerLink="/detail" [state]="iphone">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -145,9 +139,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of macbook_new">
+                    <li *ngFor="let iphone of air_pods_new">
                         <p>
-                            <a routerLink="/detail">
+                            <a routerLink="/detail" [state]="iphone">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -174,9 +168,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of macbook_new">
+                    <li *ngFor="let iphone of apple_watch_new">
                         <p>
-                            <a routerLink="/detail">
+                            <a routerLink="/detail" [state]="iphone">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -203,9 +197,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of airPods_new">
+                    <li *ngFor="let iphone of sim_data_wifi_new">
                         <p>
-                            <a routerLink="/detail">
+                            <a routerLink="/detail" [state]="iphone">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -223,7 +217,6 @@
                 </ul>
             </div>
         </div>
-
 
     </div>
 </section>

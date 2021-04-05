@@ -9,36 +9,31 @@ import { NetworkserviceService } from '../services/networkservice.service';
 export class SectionPriceEachComponent implements OnInit {
 
   iphone_new: any = [];
-  iphone_old: any = [];
+  air_pods_new: any = [];
   ipad_new: any = [];
   macbook_new:any=[];
-  airPods_new:any=[]
+  apple_watch_new:any=[];
+  sim_data_wifi_new:any=[];
+  
 
   constructor(private networkserviceService: NetworkserviceService) {
 
   }
 
   ngOnInit(): void {
-    this.networkserviceService.getAllMobile().subscribe(val =>
+
+
+    this.networkserviceService.getAllMobile().subscribe(val =>{
       this.iphone_new = val.filter(val =>
 
         val.category == 'iphone_new' 
 
-      )
-      
-     
-    )
-    this.networkserviceService.getAllMobile().subscribe(val =>
-      this.iphone_old = val.filter(val =>
+      ),
+      this.air_pods_new = val.filter(val =>
 
-        val.category == 'iphone_old' 
+        val.category == 'air_pods_new' 
 
-      )
-      
-     
-    )
-
-    this.networkserviceService.getAllMobile().subscribe(val =>{
+      ),
       this.ipad_new = val.filter(val =>
 
         val.category == 'ipad_new' 
@@ -49,11 +44,17 @@ export class SectionPriceEachComponent implements OnInit {
         val.category == 'macbook_new' 
 
       )
-      this.airPods_new = val.filter(val =>
+      this.apple_watch_new = val.filter(val =>
 
-        val.category == 'airPods_new' 
+        val.category == 'apple_watch_new' 
 
       )
+      this.sim_data_wifi_new = val.filter(val =>
+
+        val.category == 'sim_data_wifi_new' 
+
+      )
+     
     }
      
     )

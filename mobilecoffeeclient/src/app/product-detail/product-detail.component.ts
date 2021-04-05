@@ -9,18 +9,10 @@ import { NetworkserviceService } from '../services/networkservice.service';
 export class ProductDetailComponent implements OnInit {
 
   constructor(private networkserviceService: NetworkserviceService) { }
-  id:any;
-  data:any=[];
+ 
+  data:any
   ngOnInit(): void {
-    this.networkserviceService.getAllMobile().subscribe(val =>
-      this.data = val.filter(val =>{
-        val.id == window.history.state;
-         
-      }
-      )
-      
-     
-    )
+   this.data = window.history.state;
   }
 
 }
