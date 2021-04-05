@@ -11,6 +11,8 @@ export class SectionPriceEachComponent implements OnInit {
   iphone_new: any = [];
   iphone_old: any = [];
   ipad_new: any = [];
+  macbook_new:any=[];
+  airPods_new:any=[]
 
   constructor(private networkserviceService: NetworkserviceService) {
 
@@ -36,16 +38,32 @@ export class SectionPriceEachComponent implements OnInit {
      
     )
 
-    this.networkserviceService.getAllMobile().subscribe(val =>
+    this.networkserviceService.getAllMobile().subscribe(val =>{
       this.ipad_new = val.filter(val =>
 
         val.category == 'ipad_new' 
 
       )
-      
+      this.macbook_new = val.filter(val =>
+
+        val.category == 'macbook_new' 
+
+      )
+      this.airPods_new = val.filter(val =>
+
+        val.category == 'airPods_new' 
+
+      )
+    }
      
     )
 
+
+
+  }
+
+  test(data){
+    console.log(data)
   }
 
 }

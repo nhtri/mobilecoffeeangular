@@ -60,7 +60,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of iphone_new">
                         <p>
-                            <a routerLink="/detail">
+                            <a routerLink="/detail" (click)="test($event)" [state]="(iphone.id)">
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -78,7 +78,6 @@
                 </ul>
             </div>
         </div>
-
 
         <div class="tab_content" id="cate2_content">
             <div class="tab_content_description">
@@ -118,6 +117,93 @@
                 </div>
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of ipad_new">
+                        <p>
+                            <a routerLink="/detail">
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+                                    
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate4_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+                        
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of macbook_new">
+                        <p>
+                            <a routerLink="/detail">
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+                                    
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate5_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+                        
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of macbook_new">
+                        <p>
+                            <a routerLink="/detail">
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+                                    
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate6_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+                        
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of airPods_new">
                         <p>
                             <a routerLink="/detail">
                                 <span class="pics">
