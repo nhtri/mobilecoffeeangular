@@ -128,7 +128,7 @@ body a {color: #005fc0;text-decoration: none;cursor: pointer;}
 .btn{box-sizing:border-box;padding:7px;border-radius:3px;font-size:14px;width: 45%;display:block;margin:0 auto;cursor:pointer;border:none;}
 .btn:hover{opacity:0.86}
 .btn-l {padding: 20px 0 !important;}
-.btn_pink{box-shadow:#ec2a7f 0 3px 0 0;background:#fd4495;color:#fff}
+.btn_pink{box-shadow:#ec7822 0 3px 0 0;background:#ec7822;color:#fff}
 .btn_yellow{box-shadow:#e4a212 0 3px 0 0;background:#ffb412;color:#fff}
 .btn_grey{box-shadow: #737272 0 3px 0 0;background: #969494;color:#fff;}
 .btn_blue{box-shadow: #0789bd 0 3px 0 0;background: #00abf0;color:#fff;}
