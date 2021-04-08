@@ -11,6 +11,7 @@ import { SectionEachComponent } from './section-each/section-each.component';
 import { SectionPriceEachComponent } from './section-price-each/section-price-each.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http'; 
+import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    // other imports   
+  FacebookModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
