@@ -302,7 +302,7 @@ footer .bottom .left .row25 ul li.ex_link a {	background:url(https://giftgrace.j
 .bottom .right p.form,.bottom .right p.tel{font-size:15px;text-align:left}.bottom .right p.form a{display:block;padding:10px 5px 10px 50px;margin-bottom:10px;text-decoration:none!important;background-color:#fff;border:1px solid #ccc;background-size:22px}
 
 .bottom .right p.form a:active{color:#fff!important;background-size:22px}
-.bottom .right p.tel{color:#d6d6d6;margin-bottom:10px;padding:0 5px 0 20px;font-size:16px;line-height:1;background-size:22px}
+.bottom .right p.tel{color:#d6d6d6;margin-bottom:10px;padding:0 5px 0 10px;font-size:16px;line-height:1;background-size:22px}
 .bottom .right p.tel span,.bottom .right p.attention{font-size:12px;text-align:left;margin:5px 0}
 footer address{text-align:center;margin:5px 0;font-size:12px}
 .side_cate .cate_in ul li a{display:block}
@@ -470,7 +470,7 @@ input[name="tab_item2"]{display:none}
         footer .bnr_area ul li {float:left;padding:1%;width:18%;}
         footer .bottom {padding:20px 0;max-width:768px;width: 100%;padding:15px 0;}
         footer .bottom .left {width: 100%;}
-        footer .bottom .right {width: 95%;float:right;padding: 30px 2.5% 20px;}
+        footer .bottom .right {width: 95%;float:right;padding: 30px 2.5% 20px; margin-right: 2%;}
         footer .bottom .left .row25 {width: 48%;float:left;padding: 0 15px;}
         .bottom .right{float:right;margin:0 auto 20px;padding:20px;text-align:center}
         .side_ot_btn ul li{height:22px;padding:7px 5%;width:91%;}
