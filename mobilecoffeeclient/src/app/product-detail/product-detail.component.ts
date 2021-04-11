@@ -9,10 +9,17 @@ import { NetworkserviceService } from '../services/networkservice.service';
 export class ProductDetailComponent implements OnInit {
 
   constructor(private networkserviceService: NetworkserviceService) { }
- 
-  data:any
+
+  data: any
   ngOnInit(): void {
-   this.data = window.history.state;
+    if (window.history.state.category != null) {
+      this.data = window.history.state;
+      localStorage.setItem('data', JSON.stringify(this.data))
+    }
+    else {
+      this.data = JSON.parse(localStorage.getItem('data'))
+    }
+
   }
 
 }
