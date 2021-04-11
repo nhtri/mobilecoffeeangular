@@ -290,7 +290,7 @@ footer .bnr_area ul li a img {width:100%;}
 footer .bottom {padding:20px 0;max-width: 980px;float:left; width: 980px;border-bottom: 1px solid #cccccc;padding:15px 0;}
 footer .bottom .left {width:60%;float:left;}
 footer .bottom .right {width:40%;float:right;}
-footer .bottom .left .row25 {width:30%;float:left;padding:3% 1%}
+footer .bottom .left .row25 {width:60%;float:left;padding:3% 1%; font-size: 16px;}
 footer .bottom .left .row25 ul li a {color: #585858;text-decoration: none;font-size:12px;}
 footer .bottom .left .row25 ul li a:active {color: #7a659a;text-decoration: underline;}
 footer .bottom .left .row25 ul .fir {font-weight:bold;font-size:13px;}
@@ -471,7 +471,7 @@ input[name="tab_item2"]{display:none}
         footer .bottom {padding:20px 0;max-width:768px;width: 100%;padding:15px 0;}
         footer .bottom .left {width: 100%;}
         footer .bottom .right {width: 95%;float:right;padding: 30px 2.5% 20px; margin-right: 2%;}
-        footer .bottom .left .row25 {width: 48%;float:left;padding: 0 15px;}
+        footer .bottom .left .row25 {width: 92%;float:left;padding: 20px 20px;}
         .bottom .right{float:right;margin:0 auto 20px;padding:20px;text-align:center}
         .side_ot_btn ul li{height:22px;padding:7px 5%;width:91%;}
         
