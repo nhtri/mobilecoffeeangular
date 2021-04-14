@@ -412,7 +412,7 @@ input[name="tab_item2"]{display:none}
         .header .nav{display: none;}
         .header .nav ul {display:flex;}
         .header .nav ul li{display:inline-block}
-        .main_vis img{width: calc(100% - 2px);height:160px;margin-top:60px}
+        .main_vis img{width: calc(100% - 2px);height:160px;margin-top:115px}
         
         .monthly_schwrap{margin:30px 0 0}
         .tabs{padding-bottom:20px;background-color:#fff;width:calc(100% - 6px);margin:0 auto}

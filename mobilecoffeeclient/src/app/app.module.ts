@@ -12,6 +12,7 @@ import { SectionPriceEachComponent } from './section-price-each/section-price-ea
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http'; 
 import { FacebookModule } from 'ngx-facebook';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FacebookModule } from 'ngx-facebook';
     HttpClientModule,
     // other imports   
   FacebookModule.forRoot(),
+    NgbModule,
     AppRoutingModule
   ],
   providers: [],
