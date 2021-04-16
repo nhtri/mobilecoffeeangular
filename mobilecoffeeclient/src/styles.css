@@ -340,7 +340,7 @@ footer address{text-align:center;margin:5px 0;font-size:12px}
 ------------------------------------------------------------ */
 .monthly_schwrap{margin:30px 0 0}
 .tabs{padding-bottom:20px;background-color:#fff;width: calc(100%);margin:0 auto;}
-.tab_item{width:calc((95% - 5px) / 6);height:40px;background-color:#d9d9d9;/* line-height:40px; */font-size:14px;text-align:center;color:#565656;display:block;float:left;text-align:center;font-weight:700;transition:all .2s ease;border:1px solid #362b1b;border-radius:5px;margin:0 2px;vertical-align: middle;display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;}
+.tab_item{width:calc((95% - 5px) / 7);height:40px;background-color:#d9d9d9;/* line-height:40px; */font-size:14px;text-align:center;color:#565656;display:block;float:left;text-align:center;font-weight:700;transition:all .2s ease;border:1px solid #362b1b;border-radius:5px;margin:0 2px;vertical-align: middle;display: -webkit-flex;display: flex;-webkit-align-items: center;align-items: center;-webkit-justify-content: center;justify-content: center;}
 .tab_item:hover{opacity:.75;cursor:pointer}
 .tab_content_description{padding: 15px 0% 20px 1.5%;width: 98.5%;float:left;}
 .tab_content_description .tab_content_ul li p{vertical-align:middle}

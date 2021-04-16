@@ -14,7 +14,7 @@ export class SectionPriceEachComponent implements OnInit {
   macbook_new:any=[];
   apple_watch_new:any=[];
   sim_data_wifi_new:any=[];
-  
+  showModal:boolean;
 
   constructor(private networkserviceService: NetworkserviceService) {
 
@@ -65,6 +65,16 @@ export class SectionPriceEachComponent implements OnInit {
 
   test(data){
     console.log(data)
+  }
+
+  show()
+  {
+    this.showModal = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide()
+  {
+    this.showModal = false;
   }
 
 }
