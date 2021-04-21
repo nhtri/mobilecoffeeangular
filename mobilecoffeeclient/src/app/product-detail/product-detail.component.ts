@@ -20,6 +20,8 @@ export class ProductDetailComponent implements OnInit {
   showModal1: boolean;
   showModal2: boolean;
   showModal3: boolean;
+  showModal4: boolean;
+  showModal5: boolean;
   show()
   {
     this.showModal = true; // Show-Hide Modal Check    
@@ -55,6 +57,26 @@ export class ProductDetailComponent implements OnInit {
   hide3()
   {
     this.showModal3 = false;
+  }
+
+  show4()
+  {
+    this.showModal4 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide4()
+  {
+    this.showModal4 = false;
+  }
+
+  show5()
+  {
+    this.showModal5 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide5()
+  {
+    this.showModal5 = false;
   }
   
   data: any
