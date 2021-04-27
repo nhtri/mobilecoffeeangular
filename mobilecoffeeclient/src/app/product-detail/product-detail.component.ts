@@ -1,6 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { NetworkserviceService } from '../services/networkservice.service';
+import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
+import { Url } from 'url';
+
+
+@Pipe({ name: 'safety' })
+export class SafePipe implements PipeTransform {
+  constructor(private sanitizer: DomSanitizer) { }
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+}
 
 @Component({
   selector: 'app-product-detail',
@@ -10,10 +21,11 @@ import { NetworkserviceService } from '../services/networkservice.service';
 export class ProductDetailComponent implements OnInit {
 
   title = 'appBootstrap';
-  
+
   closeResult: string;
 
-  constructor(private networkserviceService: NetworkserviceService,private modalService: NgbModal) { }
+  constructor(private sanitizer: DomSanitizer,
+    private networkserviceService: NetworkserviceService, private modalService: NgbModal) { }
 
 
   showModal: boolean;
@@ -22,73 +34,67 @@ export class ProductDetailComponent implements OnInit {
   showModal3: boolean;
   showModal4: boolean;
   showModal5: boolean;
-  show()
-  {
+  show() {
     this.showModal = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
-  hide()
-  {
+  hide() {
     this.showModal = false;
   }
-  show1()
-  {
+  show1() {
     this.showModal1 = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
-  hide1()
-  {
+  hide1() {
     this.showModal1 = false;
   }
-  show2()
-  {
+  show2() {
     this.showModal2 = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
-  hide2()
-  {
+  hide2() {
     this.showModal2 = false;
   }
-  show3()
-  {
+  show3() {
     this.showModal3 = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
-  hide3()
-  {
+  hide3() {
     this.showModal3 = false;
   }
 
-  show4()
-  {
+  show4() {
     this.showModal4 = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
-  hide4()
-  {
+  hide4() {
     this.showModal4 = false;
   }
 
-  show5()
-  {
+  show5() {
     this.showModal5 = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
-  hide5()
-  {
+  hide5() {
     this.showModal5 = false;
   }
-  
+  trustedDashboardUrl : SafeResourceUrl;
   data: any
+  video:String
   ngOnInit(): void {
     if (window.history.state.category != null) {
       this.data = window.history.state;
       localStorage.setItem('data', JSON.stringify(this.data))
+      this.video = this.data.video
     }
     else {
       this.data = JSON.parse(localStorage.getItem('data'))
     }
 
   }
+
+  getSafeUrl(){
+    this.trustedDashboardUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.data.video); 
+}
 
 }
