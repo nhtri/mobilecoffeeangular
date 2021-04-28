@@ -1,7 +1,7 @@
 <section class="sec each">
 
   <article class="kaitori_article">
-    <h2 class="ttlh2">{{data.name}}</h2>
+    <h2 class="ttlh2">{{name}}</h2>
 
 
     <div class="item_detail">
@@ -27,23 +27,23 @@
 
             </div> -->
 
-            <div class="item active" *ngIf="data.image1 != null">
-              <img [src]="data.image1" width="100%" (click)="show()" id="imageresource">
+            <div class="item active" *ngIf="image1 != null">
+              <img [src]="image1" width="100%" (click)="show()" id="imageresource">
             </div>
-            <div class="item" *ngIf="data.image2 != null">
-              <img [src]="data.image2" width="100%" (click)="show1()" id="imageresource1">
+            <div class="item" *ngIf="image2 != null">
+              <img [src]="image2" width="100%" (click)="show1()" id="imageresource1">
             </div>
-            <div class="item" *ngIf="data.image3 != null">
-              <img [src]="data.image3" width="100%" (click)="show2()" id="imageresource2">
+            <div class="item" *ngIf="image3 != null">
+              <img [src]="image3" width="100%" (click)="show2()" id="imageresource2">
             </div>
-            <div class="item" *ngIf="data.image4 != null">
-              <img [src]="data.image4" width="100%" (click)="show3()" id="imageresource3">
+            <div class="item" *ngIf="image4 != null">
+              <img [src]="image4" width="100%" (click)="show3()" id="imageresource3">
             </div>
-            <div class="item" *ngIf="data.image5 != null">
-              <img [src]="data.image5" width="100%" (click)="show4()" id="imageresource4">
+            <div class="item" *ngIf="image5 != null">
+              <img [src]="image5" width="100%" (click)="show4()" id="imageresource4">
             </div>
-            <div class="item" *ngIf="data.image6 != null">
-              <img [src]="data.image6" width="100%" (click)="show5()" id="imageresource5">
+            <div class="item" *ngIf="image6 != null">
+              <img [src]="image6" width="100%" (click)="show5()" id="imageresource5">
             </div>
            
 
@@ -53,7 +53,7 @@
                 <!-- <iframe src={{data.video|safe:url}} width="500" height="889" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe> -->
                 <!-- <iframe width="420" height="345" src="assets/images/video463238c2-4e56-4b23-b813-a363d70f5b30video.mp4">
                 </iframe> -->
-                <div class="item" *ngIf="data.video != null">
+                <div class="item" *ngIf="video != null">
                 <video width="100%" autoplay loop id="myVideo" (click)="show6()">
                   <source [src]="video" type="video/mp4">
                 </video>
@@ -74,13 +74,13 @@
       </figure>
       <div class="exp">
         <ul>
-          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">{{data.summary}}
+          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">{{summary}}
           </li>
-          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; white-space:pre-line">{{data.details}}
+          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; white-space:pre-line">{{details}}
           </li>
-          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">{{data.remarks}}</li>
-          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">{{data.guarantee}}</li>
-          <li style="color: #ec7822; font-size: 14px; font-weight: bold;">{{data.price}}</li>
+          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">{{remarks}}</li>
+          <li style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">{{guarantee}}</li>
+          <li style="color: #ec7822; font-size: 14px; font-weight: bold;">{{price}}</li>
         </ul>
 
       </div>
@@ -103,7 +103,7 @@
     <span aria-hidden="true" class="close" (click)="hide()">&times;</span>
     <!-- </button> -->
     <div class="modal-dialog">
-      <img class="modal-content" [src]="data.image1" id="imagepreview">
+      <img class="modal-content" [src]="image1" id="imagepreview">
     </div>
   </div>
 
@@ -113,7 +113,7 @@
     <span aria-hidden="true" class="close" (click)="hide1()">&times;</span>
     <!-- </button> -->
     <div class="modal-dialog">
-      <img class="modal-content" [src]="data.image2" id="imagepreview1">
+      <img class="modal-content" [src]="image2" id="imagepreview1">
     </div>
   </div>
 
@@ -123,7 +123,7 @@
     <span aria-hidden="true" class="close" (click)="hide2()">&times;</span>
     <!-- </button> -->
     <div class="modal-dialog">
-      <img class="modal-content" [src]="data.image3" id="imagepreview2">
+      <img class="modal-content" [src]="image3" id="imagepreview2">
     </div>
   </div>
 
@@ -133,7 +133,7 @@
     <span aria-hidden="true" class="close" (click)="hide3()">&times;</span>
     <!-- </button> -->
     <div class="modal-dialog">
-      <img class="modal-content" [src]="data.image4" id="imagepreview3">
+      <img class="modal-content" [src]="image4" id="imagepreview3">
     </div>
   </div>
 
@@ -144,7 +144,7 @@
     <span aria-hidden="true" class="close" (click)="hide4()">&times;</span>
     <!-- </button> -->
     <div class="modal-dialog">
-      <img class="modal-content" [src]="data.image4" id="imagepreview4">
+      <img class="modal-content" [src]="image4" id="imagepreview4">
     </div>
   </div>
 
@@ -155,7 +155,7 @@
     <span aria-hidden="true" class="close" (click)="hide5()">&times;</span>
     <!-- </button> -->
     <div class="modal-dialog">
-      <img class="modal-content" [src]="data.image5" id="imagepreview5">
+      <img class="modal-content" [src]="image5" id="imagepreview5">
     </div>
   </div>
 

@@ -92,7 +92,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of ipad_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone">
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -121,7 +121,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of macbook_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone">
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -150,7 +150,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of air_pods_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]="iphone.id">
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -179,7 +179,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of apple_watch_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone">
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -208,7 +208,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone of sim_data_wifi_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone">
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
