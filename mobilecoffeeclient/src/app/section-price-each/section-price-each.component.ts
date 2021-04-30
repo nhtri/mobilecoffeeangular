@@ -74,7 +74,7 @@ export class SectionPriceEachComponent implements OnInit {
   //Bootstrap Modal Close event
   hide()
   {
-    this.showModal = false;
+    alert("Bạn đã đăng ký nhận tin khuyến mãi thành công")
   }
 
 }

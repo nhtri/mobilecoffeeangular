@@ -34,6 +34,8 @@
 .form-control1 {
 	position: relative;
 	margin: 30px 0 20px;
+	width: 100%;
+	max-width: 550px;
 }
 
 .input {
@@ -129,7 +131,8 @@
       margin-top: 150px;
 
     margin-left: 0%;
-    }
+	}
+	
   }
 
 body {

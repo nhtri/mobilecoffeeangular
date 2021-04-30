@@ -36,33 +36,10 @@ export class ProductDetailComponent implements OnInit {
   remarks:String
   guarantee:String
   price:String
+  video: String
   constructor(private sanitizer: DomSanitizer,
     private networkserviceService: NetworkserviceService, private modalService: NgbModal, private route: ActivatedRoute) {
-      // this.route.queryParams
-      // .subscribe(params => {
-      //   console.log('params', params.id[0]); // { order: "popular" }
-      //   this.networkserviceService.getMobile(params.id[0]).subscribe(val => {
-      //     console.log('this.data', val)
-      //     this.data = val
-      //     console.log('this.data', this.data)
-      //     this.video = "http://tonylemobile.com/assets/images/" + this.data.video
-      //     this.image1=this.data.image1
-      //     this.image2=this.data.image2
-      //     this.image3=this.data.image3
-      //     this.image4=this.data.image4
-      //     this.image5=this.data.image5
-      //     this.image6=this.data.image6
-      //     this.name=this.data.name
-      //     this.summary=this.data.summary
-      //     this.details=this.data.details
-      //     this.remarks=this.data.remarks
-      //     this.guarantee=this.data.guarantee
-      //     this.price=this.data.price
-      //   }
-      //   );
-  
-      // }
-      // )
+      
      }
 
 
@@ -128,7 +105,7 @@ export class ProductDetailComponent implements OnInit {
 
   trustedDashboardUrl: SafeResourceUrl;
   data: any
-  video: String
+ 
 
   ngOnChanges(){
     
@@ -147,12 +124,13 @@ export class ProductDetailComponent implements OnInit {
 
     this.route.queryParams
       .subscribe(params => {
-        console.log('params', params.id[0]); // { order: "popular" }
-        this.networkserviceService.getMobile(params.id[0]).subscribe(val => {
+        console.log('params', params.id); // { order: "popular" }
+        this.networkserviceService.getMobile(params.id).subscribe(val => {
           console.log('this.data', val)
           this.data = val
           console.log('this.data', this.data)
-          this.video = "http://tonylemobile.com/assets/images/" + this.data[0].video
+          this.video = "./assets/images/" + this.data[0].video
+          console.log(this.video)
           this.image1=this.data[0].image1
           this.image2=this.data[0].image2
           this.image3=this.data[0].image3
