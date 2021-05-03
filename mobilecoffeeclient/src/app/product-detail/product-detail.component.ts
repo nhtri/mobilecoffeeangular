@@ -31,6 +31,10 @@ export class ProductDetailComponent implements OnInit {
   image4:String
   image5:String
   image6:String
+  image7:String
+  image8:String
+  image9:String
+  image10:String
   summary:String
   details:String
   remarks:String
@@ -50,6 +54,10 @@ export class ProductDetailComponent implements OnInit {
   showModal4: boolean;
   showModal5: boolean;
   showModal6: boolean;
+  showModal7: boolean;
+  showModal8: boolean;
+  showModal9: boolean;
+  showModal10: boolean;
   show() {
     this.showModal = true; // Show-Hide Modal Check    
   }
@@ -95,12 +103,44 @@ export class ProductDetailComponent implements OnInit {
     this.showModal5 = false;
   }
 
+  show7() {
+    this.showModal7 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide7() {
+    this.showModal7 = false;
+  }
+
+  show8() {
+    this.showModal8 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide8() {
+    this.showModal8 = false;
+  }
+
+  show9() {
+    this.showModal9 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide9() {
+    this.showModal9 = false;
+  }
+
   show6() {
     this.showModal6 = true; // Show-Hide Modal Check    
   }
   //Bootstrap Modal Close event
   hide6() {
     this.showModal6 = false;
+  }
+
+  show10() {
+    this.showModal10 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide10() {
+    this.showModal10 = false;
   }
 
   trustedDashboardUrl: SafeResourceUrl;
@@ -137,6 +177,10 @@ export class ProductDetailComponent implements OnInit {
           this.image4=this.data[0].image4
           this.image5=this.data[0].image5
           this.image6=this.data[0].image6
+          this.image7=this.data[0].image7
+          this.image8=this.data[0].image8
+          this.image9=this.data[0].image9
+          this.image10=this.data[0].image10
           this.name=this.data[0].name
           this.summary=this.data[0].summary
           this.details=this.data[0].details
