@@ -41,9 +41,18 @@
             </font>
         </label>
 
+        <input id="cate8" type="radio" name="tab_item1" (click)="show()">
+        <label class="tab_item" for="cate8">
+            <font style="vertical-align: inherit;">
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif">
+                    Điện Thoại Cũ</font>
+            </font>
+        </label>
+
         <input id="cate7" type="radio" name="tab_item1" (click)="show()">
         <label class="tab_item" for="cate7">
-            <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;"> 
                 <font
                     style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">
                     Tony Le Mobile</font>
@@ -321,6 +330,34 @@
             </div>
         </div>
 
+        <div class="tab_content" id="cate8_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of dienthoaicu">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
 
     </div>
 

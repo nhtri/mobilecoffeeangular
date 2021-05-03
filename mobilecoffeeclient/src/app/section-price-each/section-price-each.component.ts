@@ -14,6 +14,7 @@ export class SectionPriceEachComponent implements OnInit {
   macbook_new:any=[];
   apple_watch_new:any=[];
   sim_data_wifi_new:any=[];
+  dienthoaicu:any=[];
   showModal:boolean;
 
   constructor(private networkserviceService: NetworkserviceService) {
@@ -56,6 +57,11 @@ export class SectionPriceEachComponent implements OnInit {
 
       )
      
+      this.dienthoaicu = val.filter(val =>
+
+        val.category == 'dienthoaicu' && val.active == true
+
+      )
     }
      
     )

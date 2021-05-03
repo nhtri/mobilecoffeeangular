@@ -351,7 +351,7 @@ footer address{text-align:center;margin:5px 0;font-size:12px}
 .tab_content_description .tab_content_ul li .pics img{width: 40px;height: 35px;float:left;display:inline-block;}
 .tab_content_description .tab_content_ul li .name{color:#565656;margin: 0 4px 0 10px;width: 420px;overflow:hidden;height:20px;line-height:21px;}
 .tab_content_description .tab_content_ul li .price{font-size:11px;width: 158px;text-align: right;margin-left:150px}
-.tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size: 17px;margin: 0 3px 0;}
+.tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size: 17px;margin: 0 3px 0; margin-right: 40px;}
 .tab_content_description .tab_content_ul li .price .kakaku{font-size:10px;color:#585858;font-weight:700;margin-right:2px}
 .tab_content_description .tab_content_ul li .NorU{font-size:11px;border-radius:3px;padding:1px 4px}
 .tab_content_description .tab_content_ul li .new{background:#fdf3f7;border:1px solid #fd6ca2;color:#fd549e}
@@ -424,7 +424,7 @@ input[name="tab_item2"]{display:none}
         .tab_content_description .tab_content_ul li .pics img{width:35px;height:35px;float:left;display:inline-block}
         .tab_content_description .tab_content_ul li .name{color:#565656;margin:0 10px;width:415px;overflow:hidden;height:20px;line-height:21px}
         .tab_content_description .tab_content_ul li .price{font-size:11px;width:140px;text-align:left}
-        .tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size:14px; margin-left: 12px;}
+        .tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size:14px; margin-left: 52px;}
         .tab_content_description .tab_content_ul li .price .kakaku{font-size:10px;color:#585858;font-weight:700;}
         .tab_content_ttl h2{font-size:1.3em;padding:0 0 10px;color:#249bd8}
         .tab_content{display:none;clear:both;overflow:hidden;width:calc(100% - 6px);border-top:none}
