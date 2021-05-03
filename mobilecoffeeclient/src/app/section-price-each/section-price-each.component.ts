@@ -24,34 +24,35 @@ export class SectionPriceEachComponent implements OnInit {
 
 
     this.networkserviceService.getAllMobile().subscribe(val =>{
+
       this.iphone_new = val.filter(val =>
 
-        val.category == 'iphone_new' 
+        val.category == 'iphone_new' && val.active == true
 
       ),
       this.air_pods_new = val.filter(val =>
 
-        val.category == 'air_pods_new' 
+        val.category == 'air_pods_new' && val.active == true
 
       ),
       this.ipad_new = val.filter(val =>
 
-        val.category == 'ipad_new' 
+        val.category == 'ipad_new' && val.active == true
 
       )
       this.macbook_new = val.filter(val =>
 
-        val.category == 'macbook_new' 
+        val.category == 'macbook_new' && val.active == true
 
       )
       this.apple_watch_new = val.filter(val =>
 
-        val.category == 'apple_watch_new' 
+        val.category == 'apple_watch_new' && val.active == true
 
       )
       this.sim_data_wifi_new = val.filter(val =>
 
-        val.category == 'sim_data_wifi_new' 
+        val.category == 'sim_data_wifi_new' && val.active == true
 
       )
      
