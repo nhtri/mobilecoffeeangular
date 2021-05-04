@@ -16,7 +16,7 @@
                     Điện Thoại Cũ</font>
             </font>
         </label>
-        
+
         <input id="cate2" type="radio" name="tab_item1">
         <label class="tab_item" for="cate2">
             <font style="vertical-align: inherit;">
@@ -72,9 +72,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of iphone_new">
+                    <li *ngFor="let iphone of iphone_new_less; let iphone1 of iphone_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -102,9 +102,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of dienthoaicu">
+                    <li *ngFor="let iphone of dienthoaicu_less; let iphone1 of dienthoaicu">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -131,9 +131,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of ipad_new">
+                    <li *ngFor="let iphone of ipad_new_less;let iphone1 of ipad_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -160,9 +160,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of macbook_new">
+                    <li *ngFor="let iphone of macbook_new_less;let iphone1 of macbook_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -189,9 +189,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of air_pods_new">
+                    <li *ngFor="let iphone of air_pods_new_less;let iphone1 of air_pods_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -218,9 +218,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of apple_watch_new">
+                    <li *ngFor="let iphone of apple_watch_new_less;let iphone1 of apple_watch_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
@@ -247,9 +247,9 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of sim_data_wifi_new">
+                    <li *ngFor="let iphone of sim_data_wifi_new_less;let iphone1 of sim_data_wifi_new">
                         <p>
-                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>

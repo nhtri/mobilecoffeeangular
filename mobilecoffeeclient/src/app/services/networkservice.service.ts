@@ -28,6 +28,11 @@ export class NetworkserviceService {
     return this.httpClient.get<any>(getAllMobile);    
   }
 
+  getAllMobileLess() {
+    const getAllMobileLess = 'https://mobilecoffeeserver.herokuapp.com/detailLess';
+    return this.httpClient.get<any>(getAllMobileLess);    
+  }
+
   getMobile(data): Observable<any> {
     const getMobileAPI = `https://mobilecoffeeserver.herokuapp.com/detail/${data}`;
     return this.httpClient.get(getMobileAPI)

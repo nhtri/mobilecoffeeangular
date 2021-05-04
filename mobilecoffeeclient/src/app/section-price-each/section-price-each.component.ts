@@ -8,6 +8,13 @@ import { NetworkserviceService } from '../services/networkservice.service';
 })
 export class SectionPriceEachComponent implements OnInit {
 
+  iphone_new_less: any = [];
+  air_pods_new_less: any = [];
+  ipad_new_less: any = [];
+  macbook_new_less:any=[];
+  apple_watch_new_less:any=[];
+  sim_data_wifi_new_less:any=[];
+  dienthoaicu_less:any=[];
   iphone_new: any = [];
   air_pods_new: any = [];
   ipad_new: any = [];
@@ -23,6 +30,47 @@ export class SectionPriceEachComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+
+      this.iphone_new_less = val.filter(val =>
+
+        val.category == 'iphone_new' && val.active == true
+
+      ),
+      this.air_pods_new_less = val.filter(val =>
+
+        val.category == 'air_pods_new' && val.active == true
+
+      ),
+      this.ipad_new_less = val.filter(val =>
+
+        val.category == 'ipad_new' && val.active == true
+
+      )
+      this.macbook_new_less = val.filter(val =>
+
+        val.category == 'macbook_new' && val.active == true
+
+      )
+      this.apple_watch_new_less = val.filter(val =>
+
+        val.category == 'apple_watch_new' && val.active == true
+
+      )
+      this.sim_data_wifi_new_less = val.filter(val =>
+
+        val.category == 'sim_data_wifi_new' && val.active == true
+
+      )
+     
+      this.dienthoaicu_less = val.filter(val =>
+
+        val.category == 'dienthoaicu' && val.active == true
+
+      )
+    }
+     
+    )
 
     this.networkserviceService.getAllMobile().subscribe(val =>{
 
