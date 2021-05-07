@@ -1,8 +1,8 @@
 <section class="sec price each" id="focused_list">
     <!-- <h2 class="ttlh2" style="font-family: auto;">Danh Mục Sản Phẩm</h2> -->
     <div class="tabs">
-        <input id="cate1" type="radio" name="tab_item1" checked="">
-        <label class="tab_item" for="cate1">
+        <input id="cate1" type="radio" name="tab_item1" >
+        <label class="tab_item" for="cate1" routerLink="/">
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">iPhone New</font>
             </font>
@@ -36,8 +36,8 @@
             </font>
         </label>
 
-        <input id="cate6" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate6" routerLink="/apple_watch">
+        <input id="cate6" type="radio" name="tab_item1" checked="">
+        <label class="tab_item" for="cate6" >
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Apple Watch</font>
             </font>
@@ -62,7 +62,7 @@
         </label>
 
         <!--カテ始まり-->
-        <div class="tab_content" id="cate1_content">
+        <!-- <div class="tab_content" id="cate1_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
                     <h2>
@@ -89,7 +89,7 @@
 
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="tab_content" id="cate2_content">
             <div class="tab_content_description">
@@ -207,7 +207,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="tab_content" id="cate6_content">
+        <div class="tab_content" id="cate6_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
                     <h2>
@@ -234,7 +234,7 @@
 
                 </ul>
             </div>
-        </div> -->
+        </div>
 
         <!-- <div class="tab_content" id="cate7_content">
             <div class="tab_content_description">
@@ -361,8 +361,6 @@
         
 
     </div>
-
-    <router-outlet name='test'></router-outlet>
 
 
 </section>

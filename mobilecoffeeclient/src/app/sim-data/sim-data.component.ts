@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { NetworkserviceService } from '../services/networkservice.service';
 
 @Component({
-  selector: 'app-section-price-each',
-  templateUrl: './section-price-each.component.html',
-  styleUrls: ['./section-price-each.component.css']
+  selector: 'app-sim-data',
+  templateUrl: './sim-data.component.html',
+  styleUrls: ['./sim-data.component.css']
 })
-export class SectionPriceEachComponent implements OnInit {
+export class SimDataComponent implements OnInit {
 
   iphone_new_less: any = [];
   air_pods_new_less: any = [];
@@ -23,11 +23,8 @@ export class SectionPriceEachComponent implements OnInit {
   apple_watch_new:any=[];
   sim_data_wifi_new:any=[];
   dienthoaicu:any=[];
-  showModal:boolean;
 
-  constructor(private networkserviceService: NetworkserviceService,private router: Router ) {
-
-  }
+  constructor(private networkserviceService: NetworkserviceService,private router: Router ) { }
 
   ngOnInit(): void {
 
@@ -115,27 +112,6 @@ export class SectionPriceEachComponent implements OnInit {
      
     )
 
-
-
-  }
-
-  test(data){
-    console.log(data)
-  }
-
-  show()
-  {
-    this.showModal = true; // Show-Hide Modal Check    
-  }
-  //Bootstrap Modal Close event
-  hide()
-  {
-    alert("Bạn đã đăng ký nhận tin khuyến mãi thành công")
-  }
-
-  routeDienThoaiCu(){
-    // console.log("test")
-    // this.router.navigate(['/dien_thoai_cu']);
   }
 
 }

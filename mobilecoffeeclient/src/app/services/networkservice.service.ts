@@ -8,9 +8,6 @@ import { map } from 'rxjs/operators';
 })
 
 
-
-
-
 export class NetworkserviceService {
 
   // Http Headers
@@ -38,6 +35,34 @@ export class NetworkserviceService {
     return this.httpClient.get(getMobileAPI)
   }
      
-  
+  getAirPod(): Observable<any> {
+    const getAirPodAPI = `https://mobilecoffeeserver.herokuapp.com/airpod`;
+    return this.httpClient.get(getAirPodAPI)
+  }
+
+  getIpad(): Observable<any> {
+    const getIpadAPI = `https://mobilecoffeeserver.herokuapp.com/ipad`;
+    return this.httpClient.get(getIpadAPI)
+  }
+
+  getAppleWatch(): Observable<any> {
+    const getAppleWatchAPI = `https://mobilecoffeeserver.herokuapp.com/applewatch`;
+    return this.httpClient.get(getAppleWatchAPI)
+  }
+
+  getMacbook(): Observable<any> {
+    const getMacbookAPI = `https://mobilecoffeeserver.herokuapp.com/macbook`;
+    return this.httpClient.get(getMacbookAPI)
+  }
+
+  getSimData(): Observable<any> {
+    const getSimDataAPI = `https://mobilecoffeeserver.herokuapp.com/simdata`;
+    return this.httpClient.get(getSimDataAPI)
+  }
+
+  getDienthoaicu(): Observable<any> {
+    const getDienthoaicuAPI = `https://mobilecoffeeserver.herokuapp.com/dienthoaicu`;
+    return this.httpClient.get(getDienthoaicuAPI)
+  }
 
 }

@@ -1,7 +1,7 @@
 <section class="sec price each" id="focused_list">
     <!-- <h2 class="ttlh2" style="font-family: auto;">Danh Mục Sản Phẩm</h2> -->
     <div class="tabs">
-        <input id="cate1" type="radio" name="tab_item1" checked="">
+        <input id="cate1" type="radio" name="tab_item1" routerLink="/">
         <label class="tab_item" for="cate1">
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">iPhone New</font>
@@ -43,8 +43,8 @@
             </font>
         </label>
 
-        <input id="cate7" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate7" routerLink="/sim_data">
+        <input id="cate7" type="radio" name="tab_item1" checked="">
+        <label class="tab_item" for="cate7" >
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Sim Data</font>
             </font>
@@ -62,7 +62,7 @@
         </label>
 
         <!--カテ始まり-->
-        <div class="tab_content" id="cate1_content">
+        <!-- <div class="tab_content" id="cate1_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
                     <h2>
@@ -89,7 +89,7 @@
 
                 </ul>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="tab_content" id="cate2_content">
             <div class="tab_content_description">
@@ -236,7 +236,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="tab_content" id="cate7_content">
+        <div class="tab_content" id="cate7_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
                     <h2>
@@ -263,7 +263,7 @@
 
                 </ul>
             </div>
-        </div> -->
+        </div>
 
 
 
@@ -361,8 +361,6 @@
         
 
     </div>
-
-    <router-outlet name='test'></router-outlet>
 
 
 </section>
