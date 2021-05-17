@@ -21,6 +21,8 @@ import { AirPodComponent } from './air-pod/air-pod.component';
 import { AppleWatchComponent } from './apple-watch/apple-watch.component';
 import { SimDataComponent } from './sim-data/sim-data.component';
 import { TonyleMobileComponent } from './tonyle-mobile/tonyle-mobile.component';
+import {GalleriaModule} from 'primeng/galleria';
+import { PhukienComponent } from './air-pod/phukien/phukien.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { TonyleMobileComponent } from './tonyle-mobile/tonyle-mobile.component';
     AppleWatchComponent,
     SimDataComponent,
     TonyleMobileComponent,
+    PhukienComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { TonyleMobileComponent } from './tonyle-mobile/tonyle-mobile.component';
   FacebookModule.forRoot(),
     NgbModule,
     AppRoutingModule,
-    SafePipeModule
+    SafePipeModule,
+    GalleriaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

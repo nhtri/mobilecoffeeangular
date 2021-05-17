@@ -360,7 +360,8 @@ footer address{text-align:center;margin:5px 0;font-size:12px}
 input[name="tab_item1"]{display:none}
 input[name="tab_item2"]{display:none}
 .tab_content_description .tab_content_ul li span{display:inline-block;vertical-align: middle;}
-.tab_content{display:none;clear:both;overflow:hidden;width:calc(100% - 6px);border-top:none}
+/* .tab_content{display:none;clear:both;overflow:hidden;width:calc(100% - 6px);border-top:none} */
+.tab_content{clear:both;overflow:hidden;width:calc(100% - 6px);border-top:none}
 #cate1:checked ~ #cate1_content,#cate2:checked ~ #cate2_content,
 #cate3:checked ~ #cate3_content,#cate4:checked ~ #cate4_content,#cate5:checked ~ #cate5_content,
 #cate6:checked ~ #cate6_content,#cate7:checked ~ #cate7_content{display:block}

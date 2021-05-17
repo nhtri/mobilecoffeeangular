@@ -65,4 +65,9 @@ export class NetworkserviceService {
     return this.httpClient.get(getDienthoaicuAPI)
   }
 
+  getIphone(): Observable<any> {
+    const getIphoneAPI = `https://mobilecoffeeserver.herokuapp.com/iphone`;
+    return this.httpClient.get(getIphoneAPI)
+  }
+
 }

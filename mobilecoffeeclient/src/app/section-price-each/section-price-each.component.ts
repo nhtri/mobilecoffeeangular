@@ -31,44 +31,44 @@ export class SectionPriceEachComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+    this.networkserviceService.getIphone().subscribe(val =>{
 
       this.iphone_new_less = val.filter(val =>
 
         val.category == 'iphone_new' && val.active == true
 
-      ),
-      this.air_pods_new_less = val.filter(val =>
-
-        val.category == 'air_pods_new' && val.active == true
-
-      ),
-      this.ipad_new_less = val.filter(val =>
-
-        val.category == 'ipad_new' && val.active == true
-
       )
-      this.macbook_new_less = val.filter(val =>
+      // this.air_pods_new_less = val.filter(val =>
 
-        val.category == 'macbook_new' && val.active == true
+      //   val.category == 'air_pods_new' && val.active == true
 
-      )
-      this.apple_watch_new_less = val.filter(val =>
+      // ),
+      // this.ipad_new_less = val.filter(val =>
 
-        val.category == 'apple_watch_new' && val.active == true
+      //   val.category == 'ipad_new' && val.active == true
 
-      )
-      this.sim_data_wifi_new_less = val.filter(val =>
+      // )
+      // this.macbook_new_less = val.filter(val =>
 
-        val.category == 'sim_data_wifi_new' && val.active == true
+      //   val.category == 'macbook_new' && val.active == true
 
-      )
+      // )
+      // this.apple_watch_new_less = val.filter(val =>
+
+      //   val.category == 'apple_watch_new' && val.active == true
+
+      // )
+      // this.sim_data_wifi_new_less = val.filter(val =>
+
+      //   val.category == 'sim_data_wifi_new' && val.active == true
+
+      // )
      
-      this.dienthoaicu_less = val.filter(val =>
+      // this.dienthoaicu_less = val.filter(val =>
 
-        val.category == 'dienthoaicu' && val.active == true
+      //   val.category == 'dienthoaicu' && val.active == true
 
-      )
+      // )
     }
      
     )

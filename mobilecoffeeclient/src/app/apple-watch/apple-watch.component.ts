@@ -27,7 +27,7 @@ export class AppleWatchComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+    this.networkserviceService.getAppleWatch().subscribe(val =>{
 
      
       this.apple_watch_new_less = val.filter(val =>

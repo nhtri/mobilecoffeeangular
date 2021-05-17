@@ -26,7 +26,7 @@ export class DienThoaiCuComponent implements OnInit {
   constructor(private networkserviceService: NetworkserviceService) { }
 
   ngOnInit(): void {
-    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+    this.networkserviceService.getDienthoaicu().subscribe(val =>{
 
       
      

@@ -26,7 +26,7 @@ export class MacbookNewComponent implements OnInit {
   constructor(private networkserviceService: NetworkserviceService) { }
 
   ngOnInit(): void {
-    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+    this.networkserviceService.getMacbook().subscribe(val =>{
 
   
       this.macbook_new_less = val.filter(val =>

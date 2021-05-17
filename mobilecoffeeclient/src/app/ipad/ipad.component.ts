@@ -27,7 +27,7 @@ export class IpadComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+    this.networkserviceService.getIpad().subscribe(val =>{
 
     
       this.ipad_new_less = val.filter(val =>

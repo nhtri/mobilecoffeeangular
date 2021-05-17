@@ -27,7 +27,7 @@ export class AirPodComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.networkserviceService.getAllMobileLess().subscribe(val =>{
+    this.networkserviceService.getAirPod().subscribe(val =>{
 
   
       this.air_pods_new_less = val.filter(val =>
