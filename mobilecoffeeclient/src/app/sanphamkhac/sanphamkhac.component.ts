@@ -2,19 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { NetworkserviceService } from '../services/networkservice.service';
 
 @Component({
-  selector: 'app-phukien',
-  templateUrl: './phukien.component.html',
-  styleUrls: ['./phukien.component.css']
+  selector: 'app-sanphamkhac',
+  templateUrl: './sanphamkhac.component.html',
+  styleUrls: ['./sanphamkhac.component.css']
 })
-export class PhukienComponent implements OnInit {
+export class SanphamkhacComponent implements OnInit {
   iphone_new_less: any = [];
+  sanphamkhac_less: any = [];
   air_pods_new_less: any = [];
   ipad_new_less: any = [];
   macbook_new_less:any=[];
   apple_watch_new_less:any=[];
   sim_data_wifi_new_less:any=[];
   dienthoaicu_less:any=[];
-  phukien_less:any=[];
   iphone_new: any = [];
   air_pods_new: any = [];
   ipad_new: any = [];
@@ -22,33 +22,33 @@ export class PhukienComponent implements OnInit {
   apple_watch_new:any=[];
   sim_data_wifi_new:any=[];
   dienthoaicu:any=[];
-  phukien:any=[]
+  sanphamkhac:any=[];
+  showModal:boolean;
   constructor(private networkserviceService: NetworkserviceService) { }
 
   ngOnInit(): void {
-    this.networkserviceService.getPhukien().subscribe(val =>{
+    this.networkserviceService.getSanphamkhac().subscribe(val =>{
 
-    
-      this.phukien_less = val.filter(val =>
+      
+     
+      this.sanphamkhac_less = val.filter(val =>
 
-        val.category == 'phukien' && val.active == true
+        val.category == 'sanphamkhac' && val.active == true
 
       )
-
     }
      
     )
 
     this.networkserviceService.getAllMobile().subscribe(val =>{
 
+      
+     
+      this.sanphamkhac = val.filter(val =>
 
-      this.phukien = val.filter(val =>
-
-        val.category == 'phukien' && val.active == true
+        val.category == 'sanphamkhac' && val.active == true
 
       )
-
-
     }
      
     )

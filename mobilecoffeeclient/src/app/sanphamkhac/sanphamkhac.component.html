@@ -3,12 +3,12 @@
     <div class="tabs">
         <input id="cate1" type="radio" name="tab_item1" routerLink="/">
         <label class="tab_item" for="cate1">
-            <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif">iPhone Mới</font>
+            <font style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif">
+                <font style="vertical-align: inherit;">iPhone Mới</font>
             </font>
         </label>
-
-        <label class="tab_item" routerLink="/dien_thoai_cu">
+        <input id="cate2" type="radio" name="tab_item1" routerLink="/phukien" >
+        <label class="tab_item" for="cate2" >
             <font style="vertical-align: inherit;">
                 <font
                     style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif">
@@ -59,14 +59,15 @@
             </font>
         </label>
 
-        <input id="cate9" type="radio" name="tab_item1" >
-        <label class="tab_item" for="cate9" routerLink="/sanphamkhac">
+        <input id="cate9" type="radio" name="tab_item1" checked="">
+        <label class="tab_item" for="cate9" >
             <font style="vertical-align: inherit;"> 
                 <font
                     style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">
                     Sản phẩm khác</font>
             </font>
         </label>
+        
         <input id="cate10" type="radio" name="tab_item1" routerLink="/phukien">
         <label class="tab_item" for="cate10" >
             <font style="vertical-align: inherit;"> 
@@ -75,8 +76,9 @@
                     Phụ Kiện</font>
             </font>
         </label>
-        <input id="cate11" type="radio" name="tab_item1" checked="" >
-        <label class="tab_item" for="cate11" >
+
+        <input id="cate11" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate11" routerLink="/tonyle_mobile">
             <font style="vertical-align: inherit;"> 
                 <font
                     style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">
@@ -114,7 +116,7 @@
             </div>
         </div> -->
 
-        <!-- <div class="tab_content" id="cate2_content">
+        <div class="tab_content" id="cate9_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
                     <h2>
@@ -122,7 +124,7 @@
                     </h2>
                 </div>
                 <ul class="tab_content_ul">
-                    <li *ngFor="let iphone of dienthoaicu_less; let iphone1 of dienthoaicu">
+                    <li *ngFor="let iphone of sanphamkhac_less; let iphone1 of sanphamkhac">
                         <p>
                             <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
                                 <span class="pics">
@@ -141,7 +143,7 @@
 
                 </ul>
             </div>
-        </div> -->
+        </div>
 
         <!-- <div class="tab_content" id="cate3_content">
             <div class="tab_content_description">
@@ -291,7 +293,7 @@
 
 
         <!-- Gioi thieu Tony Le mobile -->
-        <!-- <div class="tab_content" id="cate8_content"> -->
+        <!-- <div class="tab_content" id="cate8_content">
             <div class="tab_content_description">
                 <div class="tab_content_ttl">
                     <br />
@@ -379,11 +381,12 @@
                 </div>
 
             </div>
-        <!-- </div> -->
+        </div> -->
 
         
 
     </div>
+
 
 
 </section>

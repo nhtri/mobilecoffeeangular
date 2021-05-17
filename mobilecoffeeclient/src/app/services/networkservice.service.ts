@@ -70,4 +70,18 @@ export class NetworkserviceService {
     return this.httpClient.get(getIphoneAPI)
   }
 
+  getPhukien(): Observable<any> {
+    const getPhukienAPI = `https://mobilecoffeeserver.herokuapp.com/phukien`;
+    return this.httpClient.get(getPhukienAPI)
+  }
+
+  getAndroid(): Observable<any> {
+    const getAndroidAPI = `https://mobilecoffeeserver.herokuapp.com/android`;
+    return this.httpClient.get(getAndroidAPI)
+  }
+
+  getSanphamkhac(): Observable<any> {
+    const getSanphamkhacAPI = `https://mobilecoffeeserver.herokuapp.com/sanphamkhac`;
+    return this.httpClient.get(getSanphamkhacAPI)
+  }
 }

@@ -22,7 +22,9 @@ import { AppleWatchComponent } from './apple-watch/apple-watch.component';
 import { SimDataComponent } from './sim-data/sim-data.component';
 import { TonyleMobileComponent } from './tonyle-mobile/tonyle-mobile.component';
 import {GalleriaModule} from 'primeng/galleria';
-import { PhukienComponent } from './air-pod/phukien/phukien.component';
+import { PhukienComponent } from './phukien/phukien.component';
+import { SanphamkhacComponent } from './sanphamkhac/sanphamkhac.component';
+import { AndroidComponent } from './android/android.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { PhukienComponent } from './air-pod/phukien/phukien.component';
     AppleWatchComponent,
     SimDataComponent,
     TonyleMobileComponent,
-    PhukienComponent
+    PhukienComponent,
+    SanphamkhacComponent,
+    AndroidComponent
     
   ],
   imports: [
