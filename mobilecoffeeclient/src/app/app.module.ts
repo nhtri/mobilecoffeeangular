@@ -25,6 +25,7 @@ import {GalleriaModule} from 'primeng/galleria';
 import { PhukienComponent } from './phukien/phukien.component';
 import { SanphamkhacComponent } from './sanphamkhac/sanphamkhac.component';
 import { AndroidComponent } from './android/android.component';
+import { MacbookproComponent } from './macbookpro/macbookpro.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AndroidComponent } from './android/android.component';
     TonyleMobileComponent,
     PhukienComponent,
     SanphamkhacComponent,
-    AndroidComponent
+    AndroidComponent,
+    MacbookproComponent
     
   ],
   imports: [

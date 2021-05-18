@@ -55,6 +55,11 @@ export class NetworkserviceService {
     return this.httpClient.get(getMacbookAPI)
   }
 
+  getMacbookPro(): Observable<any> {
+    const getMacbookProAPI = `https://mobilecoffeeserver.herokuapp.com/macbookpro`;
+    return this.httpClient.get(getMacbookProAPI)
+  }
+
   getSimData(): Observable<any> {
     const getSimDataAPI = `https://mobilecoffeeserver.herokuapp.com/simdata`;
     return this.httpClient.get(getSimDataAPI)
