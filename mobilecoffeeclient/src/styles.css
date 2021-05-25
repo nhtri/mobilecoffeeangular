@@ -354,6 +354,13 @@ footer address{text-align:center;margin:5px 0;font-size:12px}
 .tab_content_description .tab_content_ul li .price em{text-decoration:none;font-style:inherit;font-weight:700;color:#ec7822;font-size: 17px;margin: 0 3px 0; margin-right: 40px;}
 .tab_content_description .tab_content_ul li .price .kakaku{font-size:10px;color:#585858;font-weight:700;margin-right:2px}
 .tab_content_description .tab_content_ul li .NorU{font-size:11px;border-radius:3px;padding:1px 4px}
+.tab_content_description .tab_content_ul li .sales{background: #ff6801;
+    border-radius: 40px;
+    width: 15%;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: bold;
+	font-size: 11px;}
 .tab_content_description .tab_content_ul li .new{background:#fdf3f7;border:1px solid #fd6ca2;color:#fd549e}
 .tab_content_description .tab_content_ul li .used{background:#fffde4;border:1px solid #ff8417;color:#ff8417}
 .tab_content_ttl h2{font-size:1.3em;padding:0 0 10px;color:#249bd8}
@@ -364,7 +371,8 @@ input[name="tab_item2"]{display:none}
 .tab_content{clear:both;overflow:hidden;width:calc(100% - 6px);border-top:none}
 #cate1:checked ~ #cate1_content,#cate2:checked ~ #cate2_content,
 #cate3:checked ~ #cate3_content,#cate4:checked ~ #cate4_content,#cate5:checked ~ #cate5_content,
-#cate6:checked ~ #cate6_content,#cate7:checked ~ #cate7_content{display:block}
+#cate6:checked ~ #cate6_content,#cate7:checked ~ #cate7_content,#cate8:checked ~ #cate8_content,#cate9:checked ~ #cate9_content
+,#cate10:checked ~ #cate10_content,#cate11:checked ~ #cate11_content,#cate12:checked ~ #cate12_content{display:block}
 .tabs input:checked + .tab_item{background-color: #ec7822;color:#fff;}
 
 /*kaitori_article*/
