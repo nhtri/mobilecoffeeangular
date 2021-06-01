@@ -138,7 +138,7 @@
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
-                                <span class="NorU new">New</span>
+                                <span class="NorU new" *ngIf="iphone.new">New</span>
                                 <span class="name">
                                     {{iphone.name}} </span>
                                 <span class="price">

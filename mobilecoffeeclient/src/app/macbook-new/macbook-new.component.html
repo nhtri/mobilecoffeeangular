@@ -36,29 +36,29 @@
             </font>
         </label>
 
-        <input id="cate5" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate5" routerLink="/air_pod">
+        <input id="cate6" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate6" routerLink="/air_pod">
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Air Pods</font>
             </font>
         </label>
 
-        <input id="cate6" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate6" routerLink="/apple_watch">
+        <input id="cate7" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate7" routerLink="/apple_watch">
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Apple Watch</font>
             </font>
         </label>
 
-        <input id="cate7" type="radio" name="tab_item1">
-        <label class="tab_item" for="cate7" routerLink="/sim_data">
+        <input id="cate8" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate8" routerLink="/sim_data">
             <font style="vertical-align: inherit;">
                 <font style="vertical-align: inherit;">Sim Data</font>
             </font>
         </label>
 
-        <input id="cate8" type="radio" name="tab_item1" >
-        <label class="tab_item" for="cate8" routerLink="/android">
+        <input id="cate9" type="radio" name="tab_item1" >
+        <label class="tab_item" for="cate9" routerLink="/android">
             <font style="vertical-align: inherit;"> 
                 <font
                     style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif;   ">
@@ -66,8 +66,8 @@
             </font>
         </label>
 
-        <input id="cate9" type="radio" name="tab_item1" >
-        <label class="tab_item" for="cate9" routerLink="/sanphamkhac">
+        <input id="cate10" type="radio" name="tab_item1" >
+        <label class="tab_item" for="cate10" routerLink="/sanphamkhac">
             <font style="vertical-align: inherit;"> 
                 <font
                     style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif;   ">
@@ -75,7 +75,7 @@
             </font>
         </label>
         
-        <input id="cate10" type="radio" name="tab_item1" >
+        <input id="cate11" type="radio" name="tab_item1" >
         <label class="tab_item" for="cate10" routerLink="/phukien">
             <font style="vertical-align: inherit;"> 
                 <font
@@ -85,7 +85,7 @@
         </label>
 
 
-        <input id="cate11" type="radio" name="tab_item1">
+        <input id="cate12" type="radio" name="tab_item1">
         <label class="tab_item" for="cate11" routerLink="/tonyle_mobile">
             <font style="vertical-align: inherit;"> 
                 <font
@@ -196,7 +196,7 @@
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
-                                <span class="NorU new">New</span>
+                                <span class="NorU new" *ngIf="iphone.new">New</span>
                                 <span class="name">
                                     {{iphone.name}} </span>
                                 <span class="price">
