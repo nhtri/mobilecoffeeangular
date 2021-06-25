@@ -41,6 +41,7 @@ export class ProductDetailComponent implements OnInit {
   remarks:String
   guarantee:String
   price:String
+  giamoi:String
   video: String
   constructor(private sanitizer: DomSanitizer, private location: Location,
     private networkserviceService: NetworkserviceService, private modalService: NgbModal, private route: ActivatedRoute) {
@@ -174,6 +175,7 @@ export class ProductDetailComponent implements OnInit {
       this.remarks=this.data.remarks
       this.guarantee=this.data.guarantee
       this.price=this.data.price
+      this.giamoi=this.data.giamoi
     }
     else {
       this.route.queryParams
@@ -201,6 +203,7 @@ export class ProductDetailComponent implements OnInit {
           this.remarks=this.data[0].remarks
           this.guarantee=this.data[0].guarantee
           this.price=this.data[0].price
+          this.giamoi=this.data[0].giamoi
         }
         );
 

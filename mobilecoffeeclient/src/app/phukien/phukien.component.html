@@ -138,12 +138,21 @@
                                 <span class="pics">
                                     <img [src]="iphone.image1" alt="">
                                 </span>
-                                <span class="NorU new" *ngIf="iphone.new">New</span>
+                                <span class="NorU new" *ngIf="iphone.new == true">New</span>
+                                <span *ngIf="iphone.giamoi">
+                                    <img src="./assets/images/sale2.jpeg" style="height: 40px; margin-left: 10px;">
+                                </span>
                                 <span class="name">
                                     {{iphone.name}} </span>
-                                <span class="price">
+                                <!-- <span class="sales">Giảm 6,500,000 ₫
+                                </span> -->
 
+                                <span *ngIf="!iphone.giamoi" class="price">
                                     <em> {{iphone.price}}</em>
+                                </span>
+                                <span *ngIf="iphone.giamoi" class="price1">
+                                    <em1> {{iphone.giamoi}}</em1>
+                                    <em1><del> {{iphone.price}}</del></em1>
                                 </span>
                             </a>
                         </p>
